@@ -131,11 +131,18 @@ const openaiKey = apiKey || process.env.OPENAI_API_KEY;
 
 Users enter their own API key in the settings modal. Good if you want separate usage tracking.
 
-### Access Control (Vercel Pro)
+### Password Protection
 
-Using Vercel Pro's **password protection** to limit access to family members. This prevents random internet users from accessing the app and consuming the shared OpenAI API key.
+The app has a built-in password gate to limit access to family members.
 
-To enable: Vercel Dashboard → Project → Settings → Deployment Protection → Password Protection
+To enable:
+1. Go to your Vercel project → Settings → Environment Variables
+2. Add `SITE_PASSWORD` with your chosen password
+3. Redeploy
+
+Users will see a password prompt before accessing the app. Once entered correctly, it's stored in their browser so they won't need to re-enter it.
+
+**Note:** If `SITE_PASSWORD` is not set, the app runs without password protection (useful for local development).
 
 ---
 

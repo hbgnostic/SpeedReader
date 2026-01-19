@@ -6,3 +6,4 @@ export { TextInput } from './TextInput';
 export { URLInput } from './URLInput';
 export { PrepScreen } from './PrepScreen';
 export { SettingsModal } from './SettingsModal';
+export { PasswordGate } from './PasswordGate';

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { PasswordGate } from '@/components';
 
 export const metadata: Metadata = {
   title: 'SpeedReader - RSVP Speed Reading',
@@ -24,7 +25,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen bg-white antialiased">{children}</body>
+      <body className="min-h-screen bg-white antialiased">
+        <PasswordGate>{children}</PasswordGate>
+      </body>
     </html>
   );
 }
