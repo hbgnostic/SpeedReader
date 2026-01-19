@@ -6,6 +6,21 @@ Built with Next.js, deployable on Vercel.
 
 ---
 
+## Quick Deploy (Fork Your Own)
+
+Want your own copy? Here's the fastest path:
+
+1. **Fork this repo** → Click "Fork" on GitHub
+2. **Deploy to Vercel** → [vercel.com/new](https://vercel.com/new), import your fork
+3. **Add environment variables** in Vercel:
+   - `OPENAI_API_KEY` — your OpenAI API key (for AI prep feature)
+   - `SITE_PASSWORD` — optional, adds a password gate
+4. **Done** — your speed reader is live
+
+No environment variables? The app still works—you just won't have AI prep, and there's no password protection.
+
+---
+
 ## What It Does
 
 SpeedReader displays text one word at a time, with the **Optimal Recognition Point (ORP)** highlighted in red. This technique eliminates eye movement during reading, allowing for faster reading speeds.
