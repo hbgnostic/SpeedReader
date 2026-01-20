@@ -114,8 +114,8 @@ export function URLInput({ onSubmit }: URLInputProps) {
       )}
 
       <p className="text-sm text-gray-500">
-        Works best with article pages. May not work with paywalled content or
-        sites that require JavaScript.
+        Works best with blogs, Substack, Medium, and sites without paywalls.
+        Most major news sites (Reuters, NYT, WSJ) block extraction.
       </p>
     </form>
   );

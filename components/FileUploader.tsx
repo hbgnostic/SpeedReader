@@ -91,7 +91,10 @@ export function FileUploader({ onFileSelect, isLoading, progressMessage }: FileU
               Drop a file here or click to browse
             </p>
             <p className="mt-1 text-sm text-gray-500">
-              Supports PDF, DOCX, EPUB, TXT, and images (for OCR)
+              PDF, DOCX, EPUB, and TXT work best.
+            </p>
+            <p className="mt-1 text-xs text-gray-400">
+              Image OCR is limited—works for simple, clear text only. Book pages and screenshots may not extract well.
             </p>
           </div>
         </div>

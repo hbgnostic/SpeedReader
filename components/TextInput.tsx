@@ -42,13 +42,18 @@ export function TextInput({ onSubmit, placeholder }: TextInputProps) {
           {text.trim().split(/\s+/).filter((w) => w).length.toLocaleString()} words
         </span>
 
-        <button
-          type="submit"
-          disabled={!text.trim()}
-          className="px-6 py-2 bg-red-500 text-white rounded-lg font-medium hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-        >
-          Start Reading
-        </button>
+        <div className="text-right">
+          <button
+            type="submit"
+            disabled={!text.trim()}
+            className="px-6 py-2 bg-red-500 text-white rounded-lg font-medium hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          >
+            Start Reading
+          </button>
+          <p className="mt-1 text-xs text-gray-400">
+            AI will generate a summary and glossary first
+          </p>
+        </div>
       </div>
     </form>
   );
