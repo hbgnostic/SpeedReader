@@ -52,12 +52,12 @@ export default function Home() {
     setText(contentText);
     setFileName(contentTitle);
 
-    if (prepEnabled && apiKey) {
+    if (prepEnabled) {
       setAppState('prep');
     } else {
       setAppState('reading');
     }
-  }, [prepEnabled, apiKey]);
+  }, [prepEnabled]);
 
   const handleFileSelect = useCallback(
     async (file: File) => {
